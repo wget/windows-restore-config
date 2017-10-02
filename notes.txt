@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------
+- Adobe notes
+--------------------------------------------------------------------------------
+
+1. Uninstall all the apps. Running the cleaner tool in CLI if needed. Please note if the trial period has elapsed for one of ther product you want to install, that tool will not reset the counter and you will not be able to activate the apps afterwards. If that happens, you will have to start clean and maybe having to reinstall your OS completely or reset the last System Restore point if enabled.
+
+2. Disconnect the network card or add a firewall rule. The firewall rule cannot concern the set-up.exe or setup.exe files. You have to block all outgoing connections. If you are running a VM on Azure for example, this it the method to choose as disconnecting your network completely will prevbent you to interact with the machine using remote protocols like RDP or VNC.
+
+3. Install all the apps, because if you install then actiovate, the activation process is quite cumbersome and is annoying to replace some file after each install; it's better to make everything in a row. New installers from the 2015.5 (or even 2015.3) asks the user to connect to his/her Adobe account first before starting the installation. If no Internet connection is detected, the installation begins right away without even asking the destination folder or the language we want to install.
+
+4. Move the PDApp to C:\Program Files (x86)\Common Files\Adobe\OOBE\, making a backup first, even if its not really needed.
+
+--------------------------------------------------------------------------------
+- ConEmu
+--------------------------------------------------------------------------------
+
+Location for con Emu
+
+C:\Users\pixinko\AppData\Roaming\ConEmu.xml

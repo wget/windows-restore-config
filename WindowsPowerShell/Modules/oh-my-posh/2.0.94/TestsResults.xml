@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="16" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-03-22" time="19:43:56">
+  <environment user="appveyor" machine-name="APPVEYOR-VM" cwd="C:\projects\oh-my-posh" user-domain="APPVEYOR-VM" platform="Microsoft Windows Server 2012 R2 Datacenter|C:\windows|\Device\Harddisk0\Partition1" nunit-version="2.5.8.0" os-version="6.3.9600" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="PowerShell" name="Pester" executed="True" result="Success" success="True" time="2.5087" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="Test-IsVanillaWindow" executed="True" result="Success" success="True" time="1.5928" asserts="0" description="Test-IsVanillaWindow">
+        <results>
+          <test-case description="runs in ConEmu and outputs 'false'" name="Test-IsVanillaWindow.runs in ConEmu and outputs 'false'" time="1.3723" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in cmder and outputs 'false'" name="Test-IsVanillaWindow.runs in cmder and outputs 'false'" time="0.0809" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in ConEmu and outputs 'false'" name="Test-IsVanillaWindow.runs in ConEmu and outputs 'false'" time="0.0211" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in cmder and outputs 'false'" name="Test-IsVanillaWindow.runs in cmder and outputs 'false'" time="0.0116" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in cmder and conemu and outputs 'false'" name="Test-IsVanillaWindow.runs in cmder and conemu and outputs 'false'" time="0.0124" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in Hyper.js and outputs 'false'" name="Test-IsVanillaWindow.runs in Hyper.js and outputs 'false'" time="0.0169" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in a vanilla window and outputs 'true'" name="Test-IsVanillaWindow.runs in a vanilla window and outputs 'true'" time="0.0776" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-Home" executed="True" result="Success" success="True" time="0.0412" asserts="0" description="Get-Home">
+        <results>
+          <test-case description="returns C:\Users\appveyor" name="Get-Home.returns C:\Users\appveyor" time="0.0412" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-Provider" executed="True" result="Success" success="True" time="0.3418" asserts="0" description="Get-Provider">
+        <results>
+          <test-case description="uses the provider 'AwesomeSauce'" name="Get-Provider.uses the provider 'AwesomeSauce'" time="0.3418" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-Drive" executed="True" result="Success" success="True" time="0.5328" asserts="0" description="Get-Drive">
+        <results>
+          <test-case description="is in the C:\Users\appveyor folder" name="Get-Drive.is in the C:\Users\appveyor folder" time="0.1636" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is somewhere in the C:\Users\appveyor folder" name="Get-Drive.is somewhere in the C:\Users\appveyor folder" time="0.0608" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is in 'Microsoft.PowerShell.Core\FileSystem::\\Test\Hello' with provider X:" name="Get-Drive.is in 'Microsoft.PowerShell.Core\FileSystem::\\Test\Hello' with provider X:" time="0.0784" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is in C:" name="Get-Drive.is in C:" time="0.0371" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is has no drive" name="Get-Drive.is has no drive" time="0.0335" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is has no valid path" name="Get-Drive.is has no valid path" time="0.119" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="running outside of the Filesystem in L:" name="Get-Drive.running outside of the Filesystem in L:" time="0.0406" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

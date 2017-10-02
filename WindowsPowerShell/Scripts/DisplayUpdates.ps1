@@ -1,0 +1,2 @@
+Import-Module Get-PackageUpdates
+Save-PackageUpdates
